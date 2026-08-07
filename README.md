@@ -65,11 +65,11 @@ Every platform also ships a plain archive, for machines where you would rather n
 
 ```bash
 tar xzf wender-<version>-linux-x64.tar.gz
-./wender/bin/wender --help
+./wender-<version>/wender/bin/wender --help
 ```
 
 On macOS the archive contains an app bundle, so the launcher is at
-`wender.app/Contents/MacOS/wender`.
+`wender-<version>/wender.app/Contents/MacOS/wender`.
 
 ### Verifying a download
 
