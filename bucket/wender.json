@@ -1,0 +1,19 @@
+{
+    "version": "6.6.5",
+    "description": "Transfer files and directories between devices over WiFi",
+    "homepage": "https://github.com/bartwell/wender-cli",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/bartwell/wender-cli/releases/download/v6.6.5/wender-6.6.5-windows-x64.zip",
+            "hash": "e00e07041ddd7232c0077e374bf1dbfbc4545529efb64c25aa2b910f59dba70f",
+            "extract_dir": "wender"
+        }
+    },
+    "bin": "wender.exe",
+    "notes": [
+        "Wender bundles its own Java runtime; nothing else needs installing.",
+        "Transfers use TCP port 2904 and discovery uses multicast on the same port,",
+        "so allow wender.exe through the firewall on private networks."
+    ]
+}
