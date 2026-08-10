@@ -1,12 +1,12 @@
 {
-    "version": "6.6.6",
+    "version": "6.6.7",
     "description": "Transfer files and directories between devices over WiFi",
     "homepage": "https://github.com/bartwell/wender-cli",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bartwell/wender-cli/releases/download/v6.6.6/wender-6.6.6-windows-x64.zip",
-            "hash": "bccda4e040b88ef514cf50ba69e35f8bf7598f9e92abcc7bb2cc60740e51f816",
+            "url": "https://github.com/bartwell/wender-cli/releases/download/v6.6.7/wender-6.6.7-windows-x64.zip",
+            "hash": "95a830c798afe40c9c3ff069b33e8ef7c78609675bfe401b8a696814d8bd923f",
             "extract_dir": "wender"
         }
     },
