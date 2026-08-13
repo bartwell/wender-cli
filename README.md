@@ -82,12 +82,16 @@ sha256sum -c SHA256SUMS --ignore-missing
 ## Usage
 
 ```
-wender send --to <ip> [--name <name>] <path>...   Send files or directories to a peer
+wender send <ip> [--name <name>] <path>...        Send files or directories to a peer
 wender receive [--out <dir>] [--name <name>]      Wait for an incoming transfer
 wender discover [--timeout <seconds>]             List Wender devices on this network
+wender --settings                                Configure persistent CLI settings
 ```
 
-Global options: `--verbose` prints library logs to stderr, plus `--help` and `--version`.
+Global options: `--verbose` prints library logs to stderr, plus `--help`, `--version`, and
+`--settings`. The latter opens an arrow-key menu for the receive directory, separate transfer
+directories, and CLI language. The default language is always English. `receive --out <dir>` takes
+priority over a saved receive directory.
 
 ### Example
 
@@ -101,7 +105,7 @@ It prints the port it is listening on and waits. On the sending machine:
 
 ```bash
 wender discover              # find the other device's address
-wender send --to 192.168.0.42 report.pdf photos/
+wender send 192.168.0.42 report.pdf photos/
 ```
 
 Directories are sent whole, and progress is shown while the transfer runs. Both commands exit
@@ -113,7 +117,7 @@ Transfers use TCP port 2904, and discovery uses multicast on the same port. Two 
 in the way:
 
 - **A VPN.** Multicast leaves through the tunnel interface instead of the LAN one, so `discover`
-  silently finds nothing. Sending still works if you pass the address yourself with `--to`.
+  silently finds nothing. Sending still works if you pass the address as the first argument.
 - **A firewall.** On Windows, allow `wender.exe` on private networks.
 
 Guest and "client isolation" Wi-Fi networks block device-to-device traffic entirely; neither
@@ -123,4 +127,5 @@ discovery nor transfer will work there.
 
 Transfer history goes to the per-user data directory: `~/.local/share/wender` on Linux (honouring
 `XDG_DATA_HOME`), `~/Library/Application Support/Wender` on macOS, `%APPDATA%\Wender` on Windows.
-Set `WENDER_DATA_DIR` to put it somewhere else.
+The same directory contains the CLI `settings.properties` file. Set `WENDER_DATA_DIR` to put both
+files somewhere else.
