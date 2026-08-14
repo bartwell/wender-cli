@@ -4,8 +4,6 @@ Send files and folders between devices on your local network, from the command l
 
 Every download bundles its own Java runtime — there is nothing to install first.
 
-> This repository distributes the built CLI. The application source lives elsewhere and is not public.
-
 ## Install
 
 ### macOS (Apple Silicon)
