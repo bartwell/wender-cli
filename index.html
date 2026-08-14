@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wender CLI — APT repository</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem;
+  }
+  pre {
+    background: rgba(127, 127, 127, .12); padding: .9rem 1rem;
+    border-radius: .5rem; overflow-x: auto;
+  }
+  code { font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9em; opacity: .7; }
+</style>
+</head>
+<body>
+<h1>Wender CLI</h1>
+<p>
+  Command-line file transfer over the local network. Every package bundles its own Java runtime —
+  there is nothing to install first.
+</p>
+
+<h2>Debian, Ubuntu, Raspberry Pi OS</h2>
+<pre><code>curl -fsSL https://bartwell.github.io/wender-cli/apt/wender.gpg \
+  | sudo tee /etc/apt/keyrings/wender.gpg > /dev/null
+
+sudo tee /etc/apt/sources.list.d/wender.sources > /dev/null &lt;&lt;'EOF'
+Types: deb
+URIs: https://bartwell.github.io/wender-cli/apt
+Suites: ./
+Signed-By: /etc/apt/keyrings/wender.gpg
+EOF
+
+sudo apt update &amp;&amp; sudo apt install wender</code></pre>
+<p>Architectures: <code>amd64</code> and <code>arm64</code> (64-bit Raspberry Pi OS included).</p>
+
+<h2>macOS</h2>
+<pre><code>brew install bartwell/tap/wender</code></pre>
+
+<h2>Windows</h2>
+<pre><code>scoop bucket add bartwell https://github.com/bartwell/wender-cli
+scoop install wender</code></pre>
+<p>
+  The installer and the zip work too, but they are not code-signed, so SmartScreen shows
+  &ldquo;Windows protected your PC&rdquo; &mdash; choose <b>More info &rarr; Run anyway</b>.
+  Scoop avoids that by clearing the downloaded-from-the-internet mark.
+</p>
+
+<h2>Everything else</h2>
+<p>
+  Installers and portable archives are on the
+  <a href="https://github.com/bartwell/wender-cli/releases">releases page</a>, along with
+  <code>SHA256SUMS</code>.
+</p>
+
+<footer>
+  This repository carries the current release only; earlier versions remain available as release
+  assets.
+</footer>
+</body>
+</html>

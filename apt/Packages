@@ -1,0 +1,34 @@
+Package: wender
+Architecture: amd64
+Version: 6.6.11-1
+Priority: optional
+Section: utils
+Maintainer: BArtWell <web@bartwell.ru>
+Installed-Size: 75310
+Provides: wender
+Depends: libc6
+Filename: ./wender_6.6.11-1_amd64.deb
+Size: 32352132
+MD5sum: a1ff97085945af52eee76ec154290fbf
+SHA1: 1ffeb50d7c8ed29793b481833588ae11de27d9f5
+SHA256: 828de9c50eb0d1cd5d37a9c2a385523a3f4366f3a808c0d978ce019d68b85dfd
+SHA512: 00ae7aa5c72309042dbc61d565bb9d42761e3e93ce672461382d324f880532b228e9b43255654e4f3909ff1e50805ef3528a3842361615ad33cd4ee57d5a2696
+Description: Transfer files and directories between devices over WiFi
+
+Package: wender
+Architecture: arm64
+Version: 6.6.11-1
+Priority: optional
+Section: utils
+Maintainer: BArtWell <web@bartwell.ru>
+Installed-Size: 75997
+Provides: wender
+Depends: libc6
+Filename: ./wender_6.6.11-1_arm64.deb
+Size: 32091102
+MD5sum: 9c481f4e3efe82a2ec6b352a60865e7d
+SHA1: 7626e6a7e6cdaa109c2c2a5a3bcf90b5f5642550
+SHA256: 93b449885f76f1db9d36dbe9eb3dd3ad256bd938ccd9b0e1e14a4aa4749c7e8c
+SHA512: 5f4069ed854fe87f6360ba6f9ed058c1a112992078caae475acf03bafc40834b2d9113793e4f28bd51f0d4b52e5a64ef2e8fe707cd9cacc9de6001bf94c24ec1
+Description: Transfer files and directories between devices over WiFi
+

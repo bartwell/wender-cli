@@ -1,0 +1,24 @@
+Architectures: amd64 arm64
+Codename: stable
+Components: main
+Date: Fri, 14 Aug 2026 19:35:58 +0000
+Description: Wender CLI
+Label: Wender
+Origin: Wender
+Suite: stable
+MD5Sum:
+ ca2332d7ae9409c310d68f174555c657             1206 Packages
+ 36ab5b20e0decfce65b67d671f2df6bb              646 Packages.gz
+ ecb9c16fdf790a9739b33f9eea6c6a8d              166 Release
+SHA1:
+ 9b3e27daa696a73bf83d44c97f7384b89eda6c9f             1206 Packages
+ 0a242502a2e30cb6691d5fdbc7ee95c6b8fb4bb0              646 Packages.gz
+ ebca4ea42fcb0718058989af01821e1dd56be58a              166 Release
+SHA256:
+ 8cd471f84dbee880a9ac4fb885f93d37691cae066c2088435ed8e17903b3585c             1206 Packages
+ dda154704311473153fd910ee6ee1f2ed21fdb2708c3fef6cd5b0792e47e692d              646 Packages.gz
+ 88f3ef9a033684e70028f66aa650d7a6c5ff02df35278d80082b7deb163cd65f              166 Release
+SHA512:
+ a8c38a416972780bb270bba86b75d0f920074fc4867ff79610e92025428fb21e22a310953d23b64dec66c6c5a683c1a6c5bda094c63a33cc8c2b40d04a409b3d             1206 Packages
+ 089f9459fa95d8b01ac0466fbd897854613f8e40553ece65f10b95cdb1c9a8c596ee82564167b5e606f0d00f9e1a9da2b85d26b7f231cdf57b9fef1eb9c0ea33              646 Packages.gz
+ 9e3ccde51673d79e8a4f841303c2ee9830d938a2dcd2768867cf51ce6456b9d39f72c1f253eb62be19481556e6f787f9bfc9544c38b06bfc0c7cfd297e69e7ef              166 Release
