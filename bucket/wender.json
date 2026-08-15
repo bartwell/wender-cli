@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/bartwell/wender-cli/releases/download/v6.6.11/wender-6.6.11-windows-x64.zip",
-            "hash": "0159ba66cbec4f0913a9a1774922bc4bcfa55d492669b3cd4580963c9decc19c",
+            "hash": "4515e5c00d52d086ffcc71776a7e59cc3a598a5b0fc78bc43f4f0cf0332deb6f",
             "extract_dir": "wender"
         }
     },

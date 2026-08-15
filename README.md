@@ -12,17 +12,6 @@ Every download bundles its own Java runtime — there is nothing to install firs
 brew install bartwell/tap/wender
 ```
 
-Homebrew asks before it will load anything from a tap it does not already know, so the first install
-can stop with `Refusing to load cask bartwell/tap/wender from untrusted tap`. Allow this one cask and
-run the install again:
-
-```bash
-brew trust --cask bartwell/tap/wender
-```
-
-`brew trust bartwell/tap` works too, but it covers everything the tap ever publishes rather than the
-one thing you came for.
-
 Or download `wender-<version>.dmg` from [Releases](https://github.com/bartwell/wender-cli/releases).
 
 ### Windows
